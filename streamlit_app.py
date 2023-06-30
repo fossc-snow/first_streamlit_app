@@ -46,3 +46,6 @@ streamlit.dataframe(my_data_rows)
 #New Section to display a new text box
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
+
+#This will not work correctly, but jsut go with it for now
+my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
